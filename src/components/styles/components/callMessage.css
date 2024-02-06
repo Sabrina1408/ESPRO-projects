@@ -36,3 +36,14 @@
     display: block;
   }
 }
+@media (max-width: 570px) {
+  .callMessage div {
+    margin: 10% 2% 20px 2%;
+  }
+  .callMessage div h2 {
+    font-size: 25px;
+  }
+  .callMessage div p {
+    font-size: 16px;
+  }
+}

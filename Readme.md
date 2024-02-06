@@ -21,7 +21,8 @@
 <h2>👀 Problemas/Ideias/Fazer</h2>
 <h3>Problemas</h3>
 <ul>
-  <li>✔️ Todos resolvidos.</li>
+  <li>🕐 Arrumar "a" das turmas.</li>
+  <li>🕐 Melhorar espaçamento entre as "divs" e o "h1" das turmas.</li>
 </ul>
 <h3>Ideias/Fazer</h3>
 <ul>
