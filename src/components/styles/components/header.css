@@ -1,0 +1,99 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 20px;
+
+  background-color: var(--white-100);
+}
+
+#btnMobile {
+  display: none;
+
+  cursor: pointer;
+
+  background: none;
+}
+
+#menuX {
+  display: none;
+}
+
+header nav menu {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+header nav menu li a {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+
+  color: var(--gray-300);
+}
+
+header nav menu li a:hover {
+  transition: ease-in-out 0.2s;
+
+  opacity: 0.8;
+}
+
+#navHeader.active menu {
+  display: flex;
+}
+
+@media(max-width: 750px) {
+  /* btnMobile */
+
+  #btnMobile {
+    display: block;
+  }
+
+  #navHeader.active #menuX {
+    display: block;
+  }
+
+  #navHeader.active #menuHairline {
+    display: none;
+  }
+
+  #navHeader menu {
+    position: absolute;
+    z-index: 1000;
+    top: 75px;
+    right: 0;
+
+    display: block;
+    visibility: hidden;
+    overflow-y: hidden;
+
+    width: 100%;
+    height: 0;
+
+    transition: 0.6s;
+
+    background-color: var(--white-100);
+  }
+
+  #navHeader.active menu {
+    display: block;
+    visibility: visible;
+
+    height: calc(100vh - 70px);
+
+    /* overflow-y: auto; */
+  }
+
+  #navHeader menu li {
+    margin: 5%;
+
+    border-bottom: 2px solid var(--blue-100);
+  }
+
+  #navHeader menu li a {
+    color: var(--blue-100);
+  }
+}

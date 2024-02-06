@@ -1,0 +1,76 @@
+/* media max-width: 750px */
+@import url("components/header.css");
+/* media max-width: 1010px */
+@import url("components/callMessage.css");
+@import url("components/classesSection.css");
+/* media max-width: 1010px */
+@import url("components/footer.css");
+@import url("fonts.css");
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@400;700&family=Cousine:wght@400;700&family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+:root {
+  /* blue */
+  --blue-200: #1B2B4D;
+  --blue-100: #0e5b92;
+  /* pink */
+  --pink-200: #E72670;
+  --pink-100: #FF004A;
+  /* Black */
+  --black-100: #000000;
+  /* Gray */
+  --gray-500: #121214;
+  --gray-400: #202024;
+  --gray-300: #abb8c3;
+  --gray-200: #7c7c8a;
+  --gray-100: #e1e1e6;
+  /* White */
+  --white-100: white;
+
+  /* Fonts */
+  --inter: "Inter", sans-serif;
+  --montserrat: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  animation: fadeIn 1s linear;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h2 {
+  color: var(--pink-100);
+  font-family: var(--inter);
+  font-size: 36px;
+  font-weight: 800;
+}
+
+p {
+  font-family: var(--inter);
+  font-size: 20px;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+}

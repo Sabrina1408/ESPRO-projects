@@ -1,0 +1,38 @@
+.callMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 140px;
+  padding: 0px 20px;
+  background-image: url("../../../../assets/img/waves.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.callMessage div {
+  max-width: 445px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.callMessage #callMessage-bottomImage {
+  display: none;
+}
+
+@media (max-width: 1010px) {
+  .callMessage {
+    gap: 0;
+  }
+  .callMessage #callMessage-topImage {
+    display: none;
+  }
+  .callMessage div {
+    margin: 10% 50px 20px 50px;
+    max-width: none;
+  }
+  .callMessage #callMessage-bottomImage {
+    display: block;
+  }
+}

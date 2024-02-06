@@ -1,0 +1,32 @@
+footer {
+  background-color: var(--blue-200);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 190px;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 0px 20px;
+  bottom: 0;
+}
+
+footer h3 {
+  color: var(--white-100);
+  font-weight: 700;
+  font-family: var(--montserrat);
+  font-size: 24px;
+}
+footer p {
+  color: var(--white-100);
+  font-family: var(--montserrat);
+  font-weight: 300;
+  font-size: 16px;
+}
+
+@media (max-width: 910px) {
+  footer {
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+  }
+}
